@@ -8,14 +8,22 @@
     where the license plate was issued. PlateCodes lets you regex-search
     for this information to determine things like what province a vehicle
     is from or what embassy it's from.
+  icon: PlateCodes/PlateCodes.png
 
   grade: stable
   confinement: devmode
 
   parts:
-    qml:
-      plugin: qmake
     platecodes:
-      plugin: copy
-      files:
-        main.qml: Main.qml
+      plugin: qmake
+      qt-version: qt5
+      source: PlateCodes
+      stage-packages:
+        - libqt5gui5
+
+  apps:
+    platecodes:
+      command: /usr/bin/qmlscene Main.qml
+      plugs:
+        - unity7
+        - home
