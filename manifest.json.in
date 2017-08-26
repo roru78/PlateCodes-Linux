@@ -1,0 +1,17 @@
+{
+    "name": "platecodes.arc676",
+    "description": "description of PlateCodes",
+    "architecture": "@CLICK_ARCH@",
+    "title": "PlateCodes",
+    "hooks": {
+        "PlateCodes": {
+            "apparmor": "PlateCodes/PlateCodes.apparmor",
+            "desktop":  "PlateCodes/PlateCodes.desktop"
+        }
+    },
+    "version": "0.1",
+    "maintainer": "Alessandro Vinciguerra <alesvinciguerra@gmail.com>",
+    "framework" : "ubuntu-sdk-15.04.6"
+}
+
+
