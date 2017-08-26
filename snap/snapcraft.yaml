@@ -1,29 +1,26 @@
-  # After registering a name on build.snapcraft.io, commit an uncommented line:
-  name: platecodes-linux
-  version: '0.1'
-  summary: Determine what the license plate says about vehicles' origins
-  description: |
-    The numbers and letters on various license plates aren't arbitrary.
-    They provide information regarding the vehicle's origins, often
-    where the license plate was issued. PlateCodes lets you regex-search
-    for this information to determine things like what province a vehicle
-    is from or what embassy it's from.
-  icon: PlateCodes/PlateCodes.png
+name: platecodes-linux
+version: '0.1'
+summary: Determine what the license plate says about vehicles' origins
+description: |
+  The numbers and letters on various license plates aren't arbitrary.
+  They provide information regarding the vehicle's origins, often
+  where the license plate was issued. PlateCodes lets you regex-search
+  for this information to determine things like what province a vehicle
+  is from or what embassy it's from.
+icon: PlateCodes/PlateCodes.png
 
-  grade: stable
-  confinement: devmode
+grade: stable
+confinement: devmode
 
-  parts:
-    platecodes:
-      plugin: qmake
-      qt-version: qt5
-      source: PlateCodes
-      stage-packages:
-        - libqt5gui5
-
-  apps:
-    platecodes:
-      command: /usr/bin/qmlscene Main.qml
-      plugs:
-        - unity7
-        - home
+parts:
+  platecodes:
+    plugin: nil
+    source: PlateCodes
+    after: [ desktop-qt5 ]
+    stage-packages: [ qmlscene, qml-module-qtquick2 ]
+    install: |
+      cp -v Main.qml PlateCodes.png $SNAPCRAFT_PART_INSTALL
+apps:
+  platecodes:
+    command: desktop-launch qmlscene $SNAP/Main.qml
+    plugs: [ x11 ]
