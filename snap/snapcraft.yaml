@@ -19,8 +19,9 @@ parts:
     after: [ desktop-qt5 ]
     stage-packages: [ qmlscene, qml-module-qtquick2, qml-module-qtquick-controls, qml-module-ubuntu-components ]
     install: |
-      cp -v Main.qml Data.js PlateCodes.png $SNAPCRAFT_PART_INSTALL
+      cp -v Main.qml Data.js PlateCodes.png PlateCodes.desktop $SNAPCRAFT_PART_INSTALL
 apps:
   platecodes:
     command: desktop-launch qmlscene $SNAP/Main.qml
+    desktop: PlateCodes.desktop
     plugs: [ x11 ]
