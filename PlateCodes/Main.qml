@@ -21,12 +21,13 @@ import "Data.js" as Data
 MainView {
     // objectName for functional testing purposes (autopilot-qt5)
     objectName: "mainView"
+    id: root
 
     // Note! applicationName needs to match the "name" field of the click manifest
     applicationName: "platecodes.arc676"
 
     width: units.gu(100)
-    height: units.gu(75)
+    height: units.gu(80)
 
     property real sideMargin: units.gu(1)
 
@@ -103,7 +104,7 @@ MainView {
                 rightMargin: sideMargin
             }
             height: parent.height - pageHeader.height - searchBox.height
-                    - searchSpace.height - 6 * sideMargin
+                    - searchSpace.height - aboutButton.height - 7 * sideMargin
             width: parent.width - 2 * sideMargin
         }
 
@@ -130,6 +131,25 @@ MainView {
             ]
             onCurrentIndexChanged: {
                 updateResults()
+            }
+        }
+
+        Button {
+            id: aboutButton
+            anchors {
+                top: searchSpace.bottom
+                topMargin: sideMargin
+                bottomMargin: sideMargin
+                leftMargin: sideMargin
+                rightMargin: sideMargin
+                horizontalCenter: parent.horizontalCenter
+            }
+            width: parent.width - 2 * sideMargin
+            text: i18n.tr("About PlateCodes")
+            onClicked: {
+                var component = Qt.createComponent("About.qml")
+                var window = component.createObject(root)
+                window.show()
             }
         }
     }
