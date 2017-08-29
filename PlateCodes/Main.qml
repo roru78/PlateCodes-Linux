@@ -104,7 +104,14 @@ MainView {
             }
             width: parent.width - 2 * sideMargin
             currentIndex: 0
-            model: ["Embassies in Beijing", "Provinces in China", "Provinces in Italy"]
+            model: [
+                "Embassies in Beijing",
+                "Provinces in China",
+                "Provinces in Italy",
+                "German embassies",
+                "German Kfz-Zulassungsbehörden",
+                "Swiss cantons"
+            ]
             onCurrentIndexChanged: {
                 updateResults()
             }
