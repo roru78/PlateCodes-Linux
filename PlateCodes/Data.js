@@ -1,3 +1,15 @@
+//  Copyright © 2017 Arc676/Alessandro Vinciguerra. All rights reserved.
+//  Text in just this file available under Wikipedia's Creative Commons License
+//  (Text of Creative Commons Attribution-ShareAlike 3.0 Unported License).
+
+//Sources
+//https://en.wikipedia.org/w/index.php?title=Vehicle_registration_plates_of_China
+//https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Italy
+//https://de.wikipedia.org/wiki/Diplomatenkennzeichen_(Deutschland)
+//https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Switzerland
+//https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland
+//https://en.wikipedia.org/wiki/Departments_of_France
+
 var searchItems = [
             [
                 "101 - Afghanistan",
