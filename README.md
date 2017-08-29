@@ -1,4 +1,8 @@
 # PlateCodes-Linux
-Linux version of [PlateCodes](https://github.com/Arc676/PlateCodes).
+Linux version of [PlateCodes](https://github.com/Arc676/PlateCodes). See the README over there for more info.
 
-I'm trying to build this with snap; if you have any experience on how to do this, please let me know.
+PlateCodes releases are/will be available as snap packages.
+
+Source code is available under GPLv3. All the information is from Wikipedia and is therefore available under
+the [Creative Commons Attribution ShareAlike license](http://creativecommons.org/licenses/by-sa/3.0/). In this project,
+it means that `Data.js` is CC whereas the QML is GPL.
