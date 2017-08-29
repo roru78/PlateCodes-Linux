@@ -110,7 +110,8 @@ MainView {
                 "Provinces in Italy",
                 "German embassies",
                 "German Kfz-Zulassungsbehörden",
-                "Swiss cantons"
+                "Swiss cantons",
+                "French departments"
             ]
             onCurrentIndexChanged: {
                 updateResults()
