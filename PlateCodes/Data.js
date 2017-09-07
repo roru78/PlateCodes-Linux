@@ -1664,7 +1664,7 @@ var searchItems = [
                 "53 - Mayenne/Laval/Pays de la Loire",
                 "54 - Meurthe-et-Moselle/Nancy/Grand Est",
                 "55 - Meuse/Bar-le-Duc/Grand Est",
-                "56 - Morbihan/Vannes/Brittay",
+                "56 - Morbihan/Vannes/Brittany",
                 "57 - Moselle/Metz/Grand Est",
                 "58 - Nièvre/Nevers/Bourgogne-Franche-Comté",
                 "59 - Nord/Lille/Hauts-de-France",
