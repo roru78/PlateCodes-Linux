@@ -1,5 +1,5 @@
 name: platecodes-linux
-version: '2.5'
+version: '2.5.1'
 summary: Determine what the license plate says about vehicles' origins
 description: |
   The numbers and letters on various license plates aren't arbitrary.
@@ -17,7 +17,12 @@ parts:
     plugin: nil
     source: PlateCodes
     after: [ desktop-qt5 ]
-    stage-packages: [ qmlscene, qml-module-qtquick2, qml-module-qtquick-controls, qml-module-ubuntu-components ]
+    stage-packages:
+      - qmlscene
+      - qml-module-qtquick2
+      - qml-module-qtquick-controls
+      - qml-module-ubuntu-components
+      - fonts-wqy-zenhei
     install: |
       cp -v Main.qml About.qml Data.js PlateCodes.png PlateCodes.desktop $SNAPCRAFT_PART_INSTALL
 apps:
