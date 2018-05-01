@@ -1,15 +1,15 @@
 {
+    "architecture": "all",
     "name": "platecodes.arc676",
-    "description": "Identify the origin of vehicles by their license plates",
-    "architecture": "@CLICK_ARCH@",
-    "title": "PlateCodes",
     "hooks": {
         "platecodes": {
             "apparmor": "platecodes.apparmor",
-            "desktop":  "platecodes.desktop"
+            "desktop": "platecodes.desktop"
         }
     },
+    "title": "PlateCodes",
     "version": "1.0.0",
+    "framework": "ubuntu-sdk-15.04.5",
     "maintainer": "Arc676/Alessandro Vinciguerra <alesvinciguerra@gmail.com>",
-    "framework" : "ubuntu-sdk-15.04.5"
+    "description": "Identify the origin of vehicles by their license plates"
 }

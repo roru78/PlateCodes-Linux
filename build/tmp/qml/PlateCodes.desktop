@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=PlateCodes
+Exec=qmlscene Main.qml
+Icon=PlateCodes.png
+Terminal=false
+Type=Application
+X-Ubuntu-Touch=true
+

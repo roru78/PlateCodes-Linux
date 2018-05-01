@@ -1,0 +1,16 @@
+//manifest.json
+//platecodes.apparmor
+//qml/PlateCodes.pro
+//qml/PlateCodes.png
+//qml/About.qml
+//qml/Main.qml
+//qml/PlateCodes.apparmor
+//qml/Data.js
+//qml/PlateCodes.desktop
+//qml/tests/autopilot/PlateCodes/__init__.py
+//qml/tests/autopilot/PlateCodes/tests/test_main.py
+//qml/tests/autopilot/PlateCodes/tests/__init__.py
+//qml/tests/autopilot/run
+//qml/tests/unit/tst_main.qml
+//assets/logo.svg
+//platecodes.desktop

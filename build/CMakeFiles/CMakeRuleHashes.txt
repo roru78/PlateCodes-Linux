@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+799021452477510316ba392939b3f0bc CMakeFiles/platecodes.desktop
+00418c41cacda06999d5c61adb5579e4 CMakeFiles/platecodes_FILES
+26e60c54f7f373b099f1f8fb12bcb8bf po/CMakeFiles/platecodes.arc676.pot

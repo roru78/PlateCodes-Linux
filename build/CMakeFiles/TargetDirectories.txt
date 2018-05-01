@@ -1,0 +1,3 @@
+/home/ale/Documents/ubuntu-sdk/PlateCodes/build/po/CMakeFiles/platecodes.arc676.pot.dir
+/home/ale/Documents/ubuntu-sdk/PlateCodes/build/CMakeFiles/platecodes.desktop.dir
+/home/ale/Documents/ubuntu-sdk/PlateCodes/build/CMakeFiles/platecodes_FILES.dir
