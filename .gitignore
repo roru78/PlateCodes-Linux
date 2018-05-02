@@ -1,0 +1,11 @@
+.*
+Builds/
+*.user
+po/
+tests/
+parts/
+prime/
+stage/
+*.snap
+*.zip
+build/
