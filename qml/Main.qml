@@ -15,7 +15,7 @@
 
 import QtQuick 2.4
 import Ubuntu.Components 1.3
-import QtQuick.Controls 1.4
+import Ubuntu.Components.ListItems 1.3 as ListItem
 import "Data.js" as Data
 
 MainView {
@@ -46,8 +46,8 @@ MainView {
             return
         }
 
-        for (var i = 0; i < Data.searchItems[searchSpace.currentIndex].length; i++) {
-            var element = Data.searchItems[searchSpace.currentIndex][i].toString()
+        for (var i = 0; i < Data.searchItems[searchSpace.selectedIndex].length; i++) {
+            var element = Data.searchItems[searchSpace.selectedIndex][i].toString()
             if (pattern.test(element)) {
                 results += element + "\n"
             }
@@ -108,7 +108,7 @@ MainView {
             width: parent.width - 2 * sideMargin
         }
 
-        ComboBox {
+        ListItem.ItemSelector {
             id: searchSpace
             anchors {
                 top: resultsBox.bottom
@@ -119,7 +119,6 @@ MainView {
                 horizontalCenter: parent.horizontalCenter
             }
             width: parent.width - 2 * sideMargin
-            currentIndex: 0
             model: [
                 "Embassies in Beijing",
                 "Provinces in China",
@@ -129,9 +128,7 @@ MainView {
                 "Swiss cantons",
                 "French departments"
             ]
-            onCurrentIndexChanged: {
-                updateResults()
-            }
+            expanded: true
         }
 
         Button {
