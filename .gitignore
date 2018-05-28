@@ -9,3 +9,5 @@ stage/
 *.snap
 *.zip
 build/
+*.ignore
+*.jsc
