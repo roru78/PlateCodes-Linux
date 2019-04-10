@@ -29,7 +29,7 @@ Page {
 		return string.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&')
 	}
 
-	function updateResults() {
+	function updateResults(index) {
 		var results = ""
 		try {
 			var pattern = new RegExp(searchBox.text)
@@ -38,8 +38,8 @@ Page {
 			return
 		}
 
-		for (var i = 0; i < Data.searchItems[searchSpace.selectedIndex].length; i++) {
-			var element = Data.searchItems[searchSpace.selectedIndex][i].toString()
+		for (var i = 0; i < Data.searchItems[index].length; i++) {
+			var element = Data.searchItems[index][i].toString()
 			if (pattern.test(element)) {
 				results += element + "\n"
 			}
@@ -48,7 +48,7 @@ Page {
 	}
 
 	Label {
-		id: prompt
+		id: promptLbl
 		text: i18n.tr("Regex:")
 		anchors {
 			left: parent.left
@@ -61,39 +61,36 @@ Page {
 	TextField {
 		id: searchBox
 		anchors {
-			left: prompt.right
+			left: promptLbl.right
 			top: header.bottom
 			leftMargin: sideMargin
 			topMargin: sideMargin
-			verticalCenter: prompt.verticalCenter
+			verticalCenter: promptLbl.verticalCenter
 		}
 		height: units.gu(3)
-		width: parent.width - prompt.width - 3 * sideMargin
-		onTextChanged: {
-			updateResults()
-		}
+		width: parent.width - promptLbl.width - 3 * sideMargin
+		onTextChanged: updateResults(searchSpace.selectedIndex)
 	}
 
 	TextArea {
 		id: resultsBox
+		readOnly: true
 		anchors {
 			top: searchBox.bottom
-			horizontalCenter: parent.horizontalCenter
 			topMargin: sideMargin
+			bottom: searchSpace.bottom
 			bottomMargin: sideMargin
 			leftMargin: sideMargin
 			rightMargin: sideMargin
+			horizontalCenter: parent.horizontalCenter
 		}
-		height: parent.height - header.height - searchBox.height
-				- searchSpace.height - 5 * sideMargin
 		width: parent.width - 2 * sideMargin
 	}
 
 	ListItem.ItemSelector {
 		id: searchSpace
 		anchors {
-			top: resultsBox.bottom
-			topMargin: sideMargin
+			bottom: parent.bottom
 			bottomMargin: sideMargin
 			leftMargin: sideMargin
 			rightMargin: sideMargin
@@ -109,6 +106,7 @@ Page {
 			"Swiss cantons",
 			"French departments"
 		]
-		expanded: true
+		expanded: false
+		onDelegateClicked: updateResults(index)
 	}
 }

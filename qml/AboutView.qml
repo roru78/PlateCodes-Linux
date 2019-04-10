@@ -62,7 +62,7 @@ Page {
 			}
 
 			WrappingLabel {
-				text: i18n.tr("All the content in this application is available under Wikipedia's Creative Commons License (Text of Creative Commons Attribution-ShareAlike 3.0 Unported License).\n\nThis means you are free to share and adapt the work under the condition that you attribute the source. You also must distribute the result under the same, similar, or compatible license.\n\nSources\nhttps://en.wikipedia.org/w/index.php?title=Vehicle_registration_plates_of_China\nhttps://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Italy\nhttps://de.wikipedia.org/wiki/Diplomatenkennzeichen_(Deutschland)\nhttps://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Switzerland\nhttps://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland\nhttps://en.wikipedia.org/wiki/Departments_of_France")
+				text: i18n.tr("All the content in this application is available under Wikipedia's Creative Commons License (Text of Creative Commons Attribution-ShareAlike 3.0 Unported License).\n\nThis means you are free to share and adapt the work under the condition that you attribute the source. You also must distribute the result under the same, similar, or compatible license.\n\nSources\nhttps://en.wikipedia.org/wiki/Vehicle_registration_plates_of_China\nhttps://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Italy\nhttps://de.wikipedia.org/wiki/Diplomatenkennzeichen_(Deutschland)\nhttps://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Switzerland\nhttps://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland\nhttps://en.wikipedia.org/wiki/Departments_of_France")
 			}
 
 		}
