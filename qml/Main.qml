@@ -19,15 +19,8 @@ import Ubuntu.Components.ListItems 1.3 as ListItem
 import "Data.js" as Data
 
 Page {
-	property real sideMargin: units.gu(1)
 	anchors.fill: parent
 	header: DefaultHeader {}
-
-	//taken from this site
-	//https://makandracards.com/makandra/15879-javascript-how-to-generate-a-regular-expression-from-a-string
-	function esc(string) {
-		return string.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&')
-	}
 
 	function updateResults(index) {
 		var results = ""
@@ -52,9 +45,9 @@ Page {
 		text: i18n.tr("Regex:")
 		anchors {
 			left: parent.left
+			leftMargin: margin
 			top: header.bottom
-			leftMargin: sideMargin
-			topMargin: units.gu(2)
+			topMargin: margin
 		}
 	}
 
@@ -62,13 +55,12 @@ Page {
 		id: searchBox
 		anchors {
 			left: promptLbl.right
+			leftMargin: margin
+			right: parent.right
+			rightMargin: margin
 			top: header.bottom
-			leftMargin: sideMargin
-			topMargin: sideMargin
-			verticalCenter: promptLbl.verticalCenter
+			topMargin: margin
 		}
-		height: units.gu(3)
-		width: parent.width - promptLbl.width - 3 * sideMargin
 		onTextChanged: updateResults(searchSpace.selectedIndex)
 	}
 
@@ -77,26 +69,26 @@ Page {
 		readOnly: true
 		anchors {
 			top: searchBox.bottom
-			topMargin: sideMargin
-			bottom: searchSpace.bottom
-			bottomMargin: sideMargin
-			leftMargin: sideMargin
-			rightMargin: sideMargin
+			topMargin: margin
+			bottom: searchSpace.top
+			bottomMargin: margin
+			leftMargin: margin
+			rightMargin: margin
 			horizontalCenter: parent.horizontalCenter
 		}
-		width: parent.width - 2 * sideMargin
+		width: parent.width - 2 * margin
 	}
 
 	ListItem.ItemSelector {
 		id: searchSpace
 		anchors {
 			bottom: parent.bottom
-			bottomMargin: sideMargin
-			leftMargin: sideMargin
-			rightMargin: sideMargin
+			bottomMargin: margin
+			leftMargin: margin
+			rightMargin: margin
 			horizontalCenter: parent.horizontalCenter
 		}
-		width: parent.width - 2 * sideMargin
+		width: parent.width - 2 * margin
 		model: [
 			"Embassies in Beijing",
 			"Provinces in China",
