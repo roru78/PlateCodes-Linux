@@ -46,8 +46,7 @@ Page {
 		anchors {
 			left: parent.left
 			leftMargin: margin
-			top: header.bottom
-			topMargin: margin
+			verticalCenter: searchBox.verticalCenter
 		}
 	}
 
