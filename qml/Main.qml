@@ -89,13 +89,13 @@ Page {
 		}
 		width: parent.width - 2 * margin
 		model: [
-			"Embassies in Beijing",
-			"Provinces in China",
-			"Provinces in Italy",
-			"German embassies",
-			"German Kfz-Zulassungsbehörden",
-			"Swiss cantons",
-			"French departments"
+			i18n.tr("Embassies in Beijing, China"),
+			i18n.tr("Chinese Provinces"),
+			i18n.tr("Italian Provinces"),
+			i18n.tr("Embassies in Berlin and Bonn, Germany"),
+			i18n.tr("German Vehicle Licensing Authority Codes"),
+			i18n.tr("Swiss Cantons"),
+			i18n.tr("French Departments")
 		]
 		expanded: false
 		onDelegateClicked: updateResults(index)
