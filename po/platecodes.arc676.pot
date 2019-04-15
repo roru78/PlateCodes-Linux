@@ -81,3 +81,31 @@ msgstr ""
 #: ../qml/Main.qml:45
 msgid "Regex:"
 msgstr ""
+
+#: ../qml/Main.qml:92
+msgid "Embassies in Beijing, China"
+msgstr ""
+
+#: ../qml/Main.qml:93
+msgid "Chinese Provinces"
+msgstr ""
+
+#: ../qml/Main.qml:94
+msgid "Italian Provinces"
+msgstr ""
+
+#: ../qml/Main.qml:95
+msgid "Embassies in Berlin and Bonn, Germany"
+msgstr ""
+
+#: ../qml/Main.qml:96
+msgid "German Vehicle Licensing Authority Codes"
+msgstr ""
+
+#: ../qml/Main.qml:97
+msgid "Swiss Cantons"
+msgstr ""
+
+#: ../qml/Main.qml:98
+msgid "French Departments"
+msgstr ""
