@@ -126,7 +126,7 @@ msgstr "Embajadas en Berlin y Bonn, Alemania"
 
 #: ../qml/Main.qml:96
 msgid "German Vehicle Licensing Authority Codes"
-msgstr "Códigos alemanes para vehículos de autoridades"
+msgstr "Códigos de la autoridad alemana licenciataria de vehículos"
 
 #: ../qml/Main.qml:97
 msgid "Swiss Cantons"
