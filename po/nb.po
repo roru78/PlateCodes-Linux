@@ -1,0 +1,136 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the platecodes.arc676 package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: platecodes.arc676\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-13 09:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: NORWEGIAN <LL@li.org>\n"
+"Language: nb\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../qml/AboutView.qml:40
+msgid "written by Arc676/Alessandro Vinciguerra. Project available under"
+msgstr "skrevet av Arc676/Alessandro Vinciguerra. Prosjekt tilgjengelig under"
+
+#: ../qml/AboutView.qml:44
+msgid ""
+"This program is free software: you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation (version 3)."
+msgstr ""
+"Dette programmet er gratis programvare: Du kan distribuere det og/eller endre det"
+"under vilkårene i GNU General Public License som publisert av Free"
+"Software Foundation (versjon 3)."
+
+#: ../qml/AboutView.qml:48
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for "
+"more details."
+msgstr ""
+"Dette programmet distribueres i håp om at det vil være nyttig, men UTEN"
+"NOEN GARANTI; uten engang den underforståtte garantien for SALGSBARHET eller"
+"EGNETHET FOR ET BESTEMT FORMÅL. Se GNU General Public License for"
+"mer informasjon."
+
+#: ../qml/AboutView.qml:52
+msgid ""
+"For the full license text, visit the <a href='https://github.com/Arc676/"
+"PlateCodes-Linux'>repository</a> or the <a href='http://www.gnu.org/"
+"licenses/'>GNU licenses page</a>"
+msgstr ""
+"For fullstendig lisenstekst, besøk <a href = 'https: //github.com/Arc676/"
+"PlateCodes-Linux '> repository </a> eller <a href =' http: //www.gnu.org/"
+"lisenser/'> siden GNU-lisenser </a>"
+
+#: ../qml/AboutView.qml:56
+msgid "%1 assets"
+msgstr "%1 eiendeler"
+
+#: ../qml/AboutView.qml:61
+msgid "Application icon by Arc676/Alessandro Vinciguerra"
+msgstr "Appikon av Arc676/Alessandro Vinciguerra"
+
+#: ../qml/AboutView.qml:65
+msgid ""
+"All the content in this application is available under Wikipedia's Creative "
+"Commons License (Text of Creative Commons Attribution-ShareAlike 3.0 "
+"Unported License).\n"
+"\n"
+"This means you are free to share and adapt the work under the condition that "
+"you attribute the source. You also must distribute the result under the "
+"same, similar, or compatible license.\n"
+"\n"
+"Sources\n"
+"https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_China\n"
+"https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Italy\n"
+"https://de.wikipedia.org/wiki/Diplomatenkennzeichen_(Deutschland)\n"
+"https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Switzerland\n"
+"https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland\n"
+"https://en.wikipedia.org/wiki/Departments_of_France"
+msgstr ""
+"Alt innholdet i dette programmet er tilgjengelig under Wikipedia's Creative "
+"Commons License (Text of Creative Commons Attribution-ShareAlike 3.0 "
+"Unported License.\n "
+"\n"
+"Dette betyr at du er fri til å dele og tilpasse arbeidet under forutsetning av at "
+"du tilordner kilden. Du må også distribuere resultatet under "
+"samme, lignende eller kompatible lisens.\n "
+"\ n"
+"Kilder \ n"
+"https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_China\n"
+"https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Italy\n"
+"https://de.wikipedia.org/wiki/Diplomatenkennzeichen_(Deutschland)\n"
+"https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Switzerland\n"
+"https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland\n"
+"https://en.wikipedia.org/wiki/Departments_of_France"
+
+#: ../qml/DefaultHeader.qml:20 platecodes.desktop.in.h:1
+msgid "PlateCodes"
+msgstr "Registreringskiltkoder"
+
+#: ../qml/DefaultHeader.qml:27
+msgid "About PlateCodes"
+msgstr "Om PlateCodes"
+
+#: ../qml/Main.qml:45
+msgid "Regex:"
+msgstr "Regex:"
+
+#: ../qml/Main.qml:92
+msgid "Embassies in Beijing, China"
+msgstr "Ambassader i Beijing, Kina"
+
+#: ../qml/Main.qml:93
+msgid "Chinese Provinces"
+msgstr "Kinesiske provinser"
+
+#: ../qml/Main.qml:94
+msgid "Italian Provinces"
+msgstr "Italienske provinser"
+
+#: ../qml/Main.qml:95
+msgid "Embassies in Berlin and Bonn, Germany"
+msgstr "Ambassader i Berlin og Bonn, Tyskland"
+
+#: ../qml/Main.qml:96
+msgid "German Vehicle Licensing Authority Codes"
+msgstr "Tyske kjøretøylisensmyndighetskoder"
+
+#: ../qml/Main.qml:97
+msgid "Swiss Cantons"
+msgstr "Sveitsiske kantoner"
+
+#: ../qml/Main.qml:98
+msgid "French Departments"
+msgstr "Franske departementer"
